@@ -1,11 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import "boxicons/css/boxicons.min.css";
-import { UserButton, useAuth } from "@clerk/nextjs";
-import styles from "./navbar.module.css";
+// import { UserButton, useAuth } from "@clerk/nextjs";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const { userId } = useAuth();
+  // const { userId } = useAuth();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -35,16 +35,16 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/">About us</a>
             </li>
             <li>
-              <a href="/earnmoney">Earn Money</a>
+              <a href="/earnmoney">Academia</a>
             </li>
             <li>
-              <a href="/feedback">Feedback</a>
+              <a href="/feedback">Industries</a>
             </li>
             <li>
-              <a href="/notification">Notification</a>
+              <a href="/notification">Projects</a>
             </li>
             {isMobile && (
               <>
@@ -61,24 +61,25 @@ const Navbar = () => {
         <div className={styles.logo}>
           <i className="bx bx-menu text-[2.5rem]" onClick={toggleMenu}></i>
           <a href="/" className="text-[2rem] cursor-pointer font-bold">
-            UniPrep
+          <img src="/assets/images/Logo.svg" alt="" className="w-[150px] h-[150px]"/>
           </a>
+          
         </div>
         <div className={styles.signinupbtn}>
-          {!userId && (
-            <>
+          {/* {!userId && (
+            <> */}
               <a href="/sign-in">Sign In</a>
               <a href="/sign-up">Sign Up</a>
-            </>
-          )}
-          {userId && (
+            {/* </>
+          )} */}
+          {/* {userId && (
           // <a href='profile' className='text-gray-300 hover:text-white bg-black mr-4'>
           //   Profile
           // </a>
           <div>
           <UserButton afterSignOutUrl='/' />
         </div>
-        )}
+        )} */}
         
         </div>
       </div>
