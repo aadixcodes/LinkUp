@@ -38,10 +38,10 @@ const Navbar = () => {
               <a href="/">About us</a>
             </li>
             <li>
-              <a href="/earnmoney">Academia</a>
+              <a href="/academics">Academia</a>
             </li>
             <li>
-              <a href="/feedback">Industries</a>
+              <a href="/industries">Industries</a>
             </li>
             <li>
               <a href="/notification">Projects</a>
@@ -68,8 +68,8 @@ const Navbar = () => {
         <div className={styles.signinupbtn}>
           {/* {!userId && (
             <> */}
-              <a href="/sign-in">Sign In</a>
-              <a href="/sign-up">Sign Up</a>
+              <a href="/login">Sign In</a>
+              <a href="/signup">Sign Up</a>
             {/* </>
           )} */}
           {/* {userId && (

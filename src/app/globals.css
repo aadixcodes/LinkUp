@@ -6,6 +6,7 @@
   --background: #eaefee;
   --foreground: #04141e;
   --green: #07633c;
+  --lgreen: #128958;
 }
 
 @media (prefers-color-scheme: dark) {
