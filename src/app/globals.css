@@ -27,3 +27,7 @@ body {
     text-wrap: balance;
   }
 }
+html, body {
+  height: 100%;
+  overflow-y: auto;
+}

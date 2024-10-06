@@ -35,7 +35,7 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a href="/">About us</a>
+              <a href="/contactus">Contact Us</a>
             </li>
             <li>
               <a href="/academics">Academia</a>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <a href="/industries">Industries</a>
             </li>
             <li>
-              <a href="/notification">Projects</a>
+              <a href="/projects">Projects</a>
             </li>
             {isMobile && (
               <>
